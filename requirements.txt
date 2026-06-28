@@ -1,0 +1,12 @@
+# SkillPulse bağımlılıkları (Python 3.11+)
+pandas
+matplotlib            # visualizers/dashboard.py (statik PNG)
+certifi               # macOS SSL kök sertifikaları (adzuna fetcher)
+python-dotenv         # fetchers/__init__.py — .env dosyasından API key yükleme
+
+# Phase 2
+streamlit             # app.py — interaktif dashboard
+plotly                # app.py — interaktif grafikler
+cloudscraper          # fetchers/kariyer.py — Cloudflare arkasındaki siteye erişim
+beautifulsoup4        # fetchers/kariyer.py — HTML parse
+google-generativeai   # advisors/gemini_insights.py — gemini-flash-latest

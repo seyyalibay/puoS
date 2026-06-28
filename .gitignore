@@ -1,0 +1,25 @@
+# API key'leri içerir — ASLA commit'leme.
+.env
+.env.local
+*.env
+!.env.example
+
+# Veri (cache + üretilen çıktılar) — klasör yapısı .gitkeep ile korunur.
+data/
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.so
+*.egg-info/
+.venv/
+venv/
+
+# Yedek dosyalar (app.py.bak, *.backup2 vb.)
+*.bak
+*.backup*
+
+# macOS
+.DS_Store
